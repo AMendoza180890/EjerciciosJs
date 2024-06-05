@@ -1,15 +1,31 @@
+// {
+//     "version": "0.2.0",
+//     "configurations": [
+//         {
+//             "type": "msedge",
+//             "request": "launch",
+//             "name": "Launch Edge against localhost",
+//             "url": "http://localhost:8080",
+//             "webRoot": "${workspaceFolder}"
+//         },
+//         {
+//             "type": "node-terminal",
+//             "name": "JavaScript Debug Terminal",
+//             "request": "launch",
+//             "cwd": "${workspaceFolder}"
+//         }
+//     ]
+// }
+
 {
-    // Use IntelliSense para saber los atributos posibles.
-    // Mantenga el puntero para ver las descripciones de los existentes atributos.
-    // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-        {
-            "type": "msedge",
-            "request": "launch",
-            "name": "Launch Edge against localhost",
-            "url": "http://localhost:8080",
-            "webRoot": "${workspaceFolder}"
-        }
+      {
+        "type": "node",
+        "request": "launch",
+        "name": "Launch Program",
+        "skipFiles": ["<node_internals>/**"],
+        "program": "${workspaceFolder}\\app.js"
+      }
     ]
-}
+  }
